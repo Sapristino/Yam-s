@@ -70,12 +70,14 @@ a:active {
 /* Joueurs */
 
 .modal {
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 20px 60px 20px;
     border-bottom: solid 2px black;
     background-color: white;
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 .modal p {
@@ -84,8 +86,9 @@ a:active {
     font-size: 22px;
     font-weight: 400;
     letter-spacing: 0.7px;
-    margin: 20px 0px;
+    margin-bottom: 20px;
 }
+
 
 .modal button {
     color: none;
@@ -93,6 +96,100 @@ a:active {
     border: none;
 }
 
+/* NomJoueurs */
+
+.modal-nomJoueur {
+    background-color: white;
+}
+
+.modal-nomJoueurTitre {
+    padding: 20px;
+}
+
+.modal-nomJoueurTitre p {
+    text-align: center;
+    font-family: "thrillers", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+}
+
+.modal-nomJoueurInput {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.modal-nomJoueur input {
+    width: 100px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    text-align: center;
+    font-family: "ff-nexus-mix", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-left: 13px;
+}
+
+.conteneur-joueur {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.conteneur-joueur input {
+    background-color: black;
+    color: white;
+    border: none;
+    text-align: center;
+    font-family: "ff-nexus-mix", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+div.conteneur-joueur .nom-joueur {
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.nom-joueur {
+    outline: none;
+    border: none;
+    width: 30%;
+    margin-right: 10px;
+    color: white;
+}
+
+.bordure-rouge {
+    border: 2px solid red;
+}
+
+.nomJoueur div.bouton-jouer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.bouton-jouer div {
+    background-color: black;
+    height: 30px;
+    width: 135px;
+    color: white;
+    font-family: "ff-nexus-mix", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 5px;
+
+}
 /* Regles */
 
 .overlay {
@@ -124,7 +221,7 @@ a:active {
     margin-bottom: 40px;
 }
 
-.jouer {
+.ok {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,8 +230,54 @@ a:active {
     padding: 15px;
 }
 
-.jouer p {
+.ok p {
     color: white;
+    font-family: "indivisible", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Tour */
+
+.modal-premierTour {
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    padding: 40px;
+}
+
+.modal-premierTour p {
+    text-align: center;
+    font-family: "thrillers", sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.7;
+}
+
+.TourPremierJoueur {
+    margin-top: 40px;
+    text-align: center;
+    font-family: "ff-nexus-mix", sans-serif;
+    font-size: 45px;
+}
+
+.bouton-ok {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 10%;
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
     font-family: "indivisible", sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -143,59 +286,34 @@ a:active {
 
 /**** PRESET ****/
 
-#preset {
+#Preset {
     display: flex;
-    gap: 20px;
-}
-
-.conteneur-joueur {
-    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: space-between;
-    margin: 15px;
+    gap: 10px;
 }
 
-.conteneur-joueur input {
-    background-color: black;
-    color: white;
-    border: none;
+.TableauScore-joueur {
+    display: flex;
+    align-items: center;
+    width: 48%;
+    height: 30px;
+    background-color: white;
+}
+
+.TableauScore-joueur .nom-joueur {
+    width: 45%;
+    color: black;
     text-align: center;
-    font-family: "ff-nexus-mix", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 1px;
-}
-
-.nom-joueur {
-    width: 30%;
-    margin-right: 10px;
-    color: white;
 }
 
 .score-joueur {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    margin-right: 10px;
-    color: white;
-}
-
-.conteneur-joueur button {
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
-    border: solid 2px white;
-    color: white;
-    font-family: "thrillers", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-}
-
-div.conteneur-joueur .nom-joueur {
     color: black;
-    background-color: white;
-    border-radius: 20px;
+}
+
+.TableauScore-joueur.display-none {
+    display: none;
 }
 
 /***** Tableau *****/

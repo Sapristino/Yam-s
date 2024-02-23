@@ -31,8 +31,8 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
         <b>A la fin de votre tour</b>, vous devez <b>obligatoirement</b> inscrire un score sur une des cases.<br>Ce score peut être de zéro si vous le décidez.<br>Une combinaison validée,
         même nulle, <b>ne peut pas</b> être refaite.
       </p>
-      <div class="jouer">
-        <p>Jouer</p>
+      <div class="ok">
+        <p>Ok</p>
       </div>
     </div>
   </div>
@@ -48,6 +48,23 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
         <button class="player-btn" value="6"><i class="fa-solid fa-dice-six fa-2xl"></i></button>
       </div>
     </div>
+  </div>
+  <div class="nomJoueur display-none">
+    <div class="modal-nomJoueur">
+      <div class="modal-nomJoueurTitre"><p>Quels sont vos noms?</p></div>
+      <div class="modal-nomJoueurInput"></div>
+    </div>
+        <div class="bouton-jouer"><div>JOUER</div></div>
+  </div>
+  <div class="modal-premierTour display-none">
+    <p class="AuTourDe">Au tour de</p>
+    <div class="TourPremierJoueur"></div>
+    <div class="bouton-ok">OK</div>
+  </div>
+  <div class="modal-tourJoueur display-none">
+    <div class="bouton-ok"></div>
+    <div class="=bouton-annuler"></div>
+  </div>
   </div>
   <div id="Preset"></div>
   <table id="scoreTable" class="display-none">
