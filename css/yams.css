@@ -207,6 +207,7 @@ div.conteneur-joueur .nom-joueur {
     color: black;
     padding: 30px;
     font-family: "indivisible", sans-serif;
+    z-index: 3;
 }
 
 .regles h2, p{
